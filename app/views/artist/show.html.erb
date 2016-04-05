@@ -1,0 +1,15 @@
+<%= link_to "Search another Artist yo!", search_path%>
+
+<br>
+
+<%= @searched[0][:artist] %> 
+<br>
+<br>
+
+
+
+<ol>
+<% @searched.each do |show| %>
+	<li><%= link_to show[:song], show[:link] %></li>
+<% end %>
+</ol>	

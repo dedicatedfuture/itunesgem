@@ -1,0 +1,9 @@
+movies
+<ol>
+<% @movies.each do |show| %>
+	<li><%= link_to show[:name], show[:link] %><br>
+	<%= show[:description] %></li><br>
+	
+<% end %>
+
+</ol>

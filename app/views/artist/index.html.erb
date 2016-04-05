@@ -1,0 +1,33 @@
+
+<h1>Search for your favorite music artist!</h1>
+<%= form_tag("show", method: 'post') do |f| %>
+
+	<%= label_tag(:fname) %>
+	<%= text_field_tag(:fname) %><br>
+	
+	<%= submit_tag("Search") %>
+
+
+	<% end %>
+
+	<h1>Search for your favorite movie!</h1>
+<%= form_tag("showmovie", method: 'post') do |f| %>
+
+	<%= label_tag(:movie) %>
+	<%= text_field_tag(:movie) %><br>
+	
+	<%= submit_tag("Search") %>
+
+
+	<% end %>
+
+	<h1>Search for your favorite tv show!</h1>
+<%= form_tag("showtvshow", method: 'post') do |f| %>
+
+	<%= label_tag(:tvshow) %>
+	<%= text_field_tag(:tvshow) %><br>
+	
+	<%= submit_tag("Search") %>
+
+
+	<% end %>
